@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import MainNav from './nav_bar/main_nav';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>React simple starter</div>
-    );
-  }
-}
+const App = ({ store }) => (
+  <Provider store={store}>
+    <MainNav></MainNav>
+  </Provider>
+);
+
+export default App;

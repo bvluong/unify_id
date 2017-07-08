@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import credentialReducer from './credentials_reducer';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  ownCredential: credentialReducer
 });
 
 export default rootReducer;
