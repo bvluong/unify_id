@@ -1,6 +1,6 @@
 import { RECEIVE_FILTER } from '../actions/filter_actions';
 
-const notificationReducer = (state = {filter: "All"}, action) => {
+const notificationReducer = (state = {filter: "all"}, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_FILTER:

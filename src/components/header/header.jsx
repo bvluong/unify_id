@@ -4,7 +4,7 @@ class Header extends React.Component {
 
   render () {
     return (
-    <div className='home-header'>
+    <div className='main-header'>
       <h3>UNIFYID</h3>
     </div>
     );

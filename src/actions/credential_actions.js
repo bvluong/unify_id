@@ -1,6 +1,6 @@
 export const  REMOVE_CRED = "REMOVE_CRED";
 
-export const removeCred = cred => ({
+export const removeCred = id => ({
   type: REMOVE_CRED,
-  cred
+  id
 });

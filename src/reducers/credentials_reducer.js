@@ -39,7 +39,9 @@ const credentialReducer = (state = defaultState, action) => {
   Object.freeze(state);
   switch (action.type) {
     case REMOVE_CRED :
-      return merge( {}, action.users);
+      let newState = merge({},state);
+      delete newState[action.id];
+      return merge( {}, newState);
     default:
       return state;
   }
