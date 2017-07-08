@@ -1,18 +1,33 @@
-
+body {
+  margin: 0;
+}
 
 html body div {
-  border: 1px solid black;
   height: 100%;
   font-family: Roboto;
 }
 
 li {
   list-style: none;
-  border-bottom: 2px solid grey;
+  border-bottom: 1px solid grey;
+  width: 220px;
+  padding-left: 10px;
+}
+
+li:hover {
+  background: #d8d4d4;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 0px;
 }
 
 .username {
-  font-size: 15px;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 0px;
+  color: grey;
 }
 
 .main-app {
@@ -22,12 +37,22 @@ li {
 .cred-list {
   display: flex;
   flex-direction: column;
+  border: 2px solid grey;
+  border-bottom: none;
+  height: 100vh;
 }
 
 .main-header {
   height: 80px;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid black;
+  padding-left: 5px;
+}
+
+h3 {
+  padding-left: 5px;
+  font-size: 25px;
 }
 
 .main-nav {
@@ -55,4 +80,8 @@ li {
 .filters:hover {
   cursor: pointer;
   opacity: 0.7;
+}
+
+.red {
+  color: red;
 }
