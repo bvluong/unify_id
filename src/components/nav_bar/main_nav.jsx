@@ -4,25 +4,32 @@ class MainNav extends React.Component {
 
   clickHandler(e) {
     e.preventDefault();
+    this.props.receiveFilter(e.target.value);
   }
 
   render() {
     return (
     <div className="main-nav">
-      <ul>
-        <li>
-          All
-        </li>
-        <li>
-          Most Used
-        </li>
-        <li>
-          My Shared login
-        </li>
-        <li>
-          Shared with me
-        </li>
-      </ul>
+      <button className="filters"
+        onClick={this.clickHandler.bind(this)}
+        value="all">
+        All
+      </button>
+      <button className="filters"
+        onClick={this.clickHandler.bind(this)}
+        value="most_used">
+        Most Used
+      </button>
+      <button className="filters"
+        onClick={this.clickHandler.bind(this)}
+        value="my_shared">
+        My Shared login
+      </button>
+      <button className="filters"
+        onClick={this.clickHandler.bind(this)}
+        value="shared_with_me">
+        Shared with me
+      </button>
     </div>
   );}
 }
