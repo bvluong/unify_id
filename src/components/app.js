@@ -3,11 +3,11 @@ import { Provider } from 'react-redux';
 import MainNavContainer from './nav_bar/main_nav_container';
 import Header from './header/header';
 
-const App = ({ store }) => (
-  <Provider store={store}>
+const App = () => (
+  <div>
     <Header/>
     <MainNavContainer/>
-  </Provider>
+  </div>
 );
 
 export default App;
