@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import MainNav from './nav_bar/main_nav';
+import MainNavContainer from './nav_bar/main_nav_container';
+import Header from './header/header';
 
 const App = ({ store }) => (
   <Provider store={store}>
-    <MainNav></MainNav>
+    <Header/>
+    <MainNavContainer/>
   </Provider>
 );
 
