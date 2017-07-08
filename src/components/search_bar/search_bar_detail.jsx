@@ -11,7 +11,7 @@ class SearchBarDetail extends React.Component {
     return(
       <div className="cred-detail">
         <div className="login-info">
-          <h3>Login Info</h3>
+          <h3>{ credDetail.website ? 'Login Info' : ''}</h3>
           <div className="website-detail">
             <h5>{ credDetail.website ? `website: ${credDetail.website}` : `` } </h5>
             <h5>{ credDetail.username ? `username: ${credDetail.username}` : `` } </h5>

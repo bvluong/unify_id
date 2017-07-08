@@ -102,7 +102,12 @@ h3 {
   justify-content: space-between;
 }
 
+.website-detail {
+  height: 90vh;
+}
+
 .cred-detail div {
   font: 25px;
   margin: 20px;
+  margin-bottom: 0px;
 }
