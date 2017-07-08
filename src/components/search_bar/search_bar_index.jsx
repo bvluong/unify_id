@@ -6,17 +6,13 @@ class SearchBarIndex extends React.Component {
     super(props);
   }
 
-  handleClick(e) {
-    
-  }
-
 
   render() {
-    const { credList } = this.props;
+    const { credList, clickHandler } = this.props;
     return(
       <div className="cred-list">
         { values(credList).map( (cred,idx) =>
-          <li key={idx} onClick={this.handleClick.bind(this)}>
+          <li key={idx} onClick={clickHandler(cred)}>
             <h2 className="website">{cred.website}</h2>
             <h4 className="username">{cred.username}</h4>
           </li>
